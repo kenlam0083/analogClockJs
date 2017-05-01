@@ -1,5 +1,7 @@
 # analogClockJs
-An analogClock js plug that written by native javascript (jQuery is not required but also campatiable). 
+An analogClock js plug that written by native javascript (jQuery/Bootstrap is not required but also campatiable). 
+
+No extra css file needed, easy to use, hope you enjoy it!
 
 <img src="https://github.com/kenlam0083/analogClockJs/blob/master/demo.png"/>
 
