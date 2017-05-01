@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <style>
+        #clock > div {
+            float:left;
+        }
+    </style>
+    <div id="clock">
+    </div>
+    
+    <script src="analogClock.js"></script>
+    <script>
+        AnalogClock("clock");//simple use
+        AnalogClock("clock", { width: 300, bgColor: "#bf0" });//simple option
+        AnalogClock("clock", new AnalogClockOption(200, "#eee", "#333"));//using option class to customize
+
+        //base on object use, returns an clock object, can do some further style controll by the returned object.
+        var opt = new AnalogClockOption(); opt.width = 100;
+        var clock = new AnalogClock("clock", opt);
+        clock.panel.style.border = "solid 1px red";
+    </script>
+</body>
+</html>
